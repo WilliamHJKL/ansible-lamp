@@ -27,11 +27,11 @@
         - 80
         - 443
 
-    - name: Allow httpd to connect to network
-      seboolean:
-        state: yes
-        name: httpd_can_network_connect
-        persistent: yes
+#    - name: Allow httpd to connect to network
+#      seboolean:
+#        state: yes
+#        name: httpd_can_network_connect
+#        persistent: yes
 
     - name: start and enable httpd
       service:
